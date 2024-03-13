@@ -1,17 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <header>
+      <h1>My Quiz Application</h1>
+    </header>
+    <main>
+      <!-- Use the Quiz component -->
+      <QuizPage />
+    </main>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import QuizPage from './components/QuizPage.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    QuizPage
   }
-}
+};
 </script>
 
 <style>
